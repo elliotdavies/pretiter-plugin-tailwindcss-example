@@ -1,0 +1,19 @@
+<html>
+  <head></head>
+
+  <body>
+    <!-- text-* classes appearing before m-* classes -->
+    <p class="text-md m-2 text-red mb-4">
+      Expected: "m-2 mb-4 text-md text-red"
+      <br />
+      Actual: "text-md text-red m-2 mb-4"
+    </p>
+
+    <!-- custom text-* classes being separated from inbuilt ones -->
+    <p class="text-md m-2 text-bespoke mb-4">
+      Expected: "m-2 mb-4 text-md text-bespoke"
+      <br />
+      Actual: "text-md m-2 mb-4 text-bespoke"
+    </p>
+  </body>
+</html>
